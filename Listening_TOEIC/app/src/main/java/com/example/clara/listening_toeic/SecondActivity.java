@@ -39,5 +39,12 @@ public class SecondActivity extends ActionBarActivity{
         });
 
     }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        player2.stop();
+    }
 }
+
 

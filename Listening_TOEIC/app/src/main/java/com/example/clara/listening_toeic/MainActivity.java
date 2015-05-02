@@ -48,6 +48,11 @@ public class MainActivity extends ActionBarActivity {
 
     }
 
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        player.stop();
+    }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
